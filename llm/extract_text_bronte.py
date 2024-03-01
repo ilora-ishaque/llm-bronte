@@ -6,6 +6,8 @@ import json
 from tqdm import tqdm
 from bs4 import BeautifulSoup
 
+from llm import config
+
 logging.basicConfig(level=logging.INFO)
 LOGGER = logging.getLogger(__name__)
 
@@ -37,4 +39,4 @@ def to_jsonl(pages: Generator[Tuple[int, str], None, None], path: Path) -> None:
 
 
 if __name__ == "__main__":
-    extract(url='https://www.gutenberg.org/cache/epub/9182/pg9182-images.html', extraction_path=Path("book_text.jsonl"))
+    extract(url=config.url, extraction_path=config.extraction_path)
