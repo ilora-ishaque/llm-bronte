@@ -16,7 +16,7 @@ extraction_path = REPO_DIR / "llm/data/extracted_text.jsonl"
 min_length = 100
 
 # HF repo
-hf_repo = "iloraishaque/llm-tolkien"
+hf_repo = "iloraishaque/llm-bronte"
 
 # Dataset
 context_length = 2048
