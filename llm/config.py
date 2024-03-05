@@ -5,7 +5,9 @@ import torch
 REPO_DIR = Path(os.path.realpath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Text extraction
-url = 'https://www.gutenberg.org/cache/epub/9182/pg9182-images.html'
+url1 = 'https://www.gutenberg.org/cache/epub/9182/pg9182-images.html'
+url2='https://www.gutenberg.org/cache/epub/1260/pg1260-images.html'
+url3='https://www.gutenberg.org/cache/epub/1028/pg1028-images.html'
 header_height = 60  # Main text distance from the top of the page: to remove header
 footer_height = 540 # Remove footer
 start_page = 45

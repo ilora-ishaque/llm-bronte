@@ -29,7 +29,7 @@ def prepare_dataset(dataset_path: Path, min_length: int, context_length: int,
     text = preprocess_data(dataset_path=dataset_path, min_length=min_length, tokenizer=tokenizer)
     dataset = Dataset.from_dict({'text': [text]})
     # We push the extracted book publicly
-    dataset.push_to_hub("iloraishaque/bronte-book")
+    dataset.push_to_hub("iloraishaque/bronte-book-full")
     tokenized_dataset = dataset.map(tokenize, batched=True, fn_kwargs={'tokenizer': tokenizer, 'context_length': context_length},
                                          remove_columns=dataset.column_names)
     LOGGER.info(f'The tokenized dataset is composed of {tokenized_dataset.num_rows} elements, each one composed of {context_length} tokens.')
