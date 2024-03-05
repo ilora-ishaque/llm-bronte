@@ -35,7 +35,7 @@ def prepare_dataset(dataset_path: Path, min_length: int, context_length: int,
     LOGGER.info(f'The tokenized dataset is composed of {tokenized_dataset.num_rows} elements, each one composed of {context_length} tokens.')
     tokenized_dataset_dict = tokenized_dataset.train_test_split(test_size=test_size, shuffle=shuffle)
     LOGGER.info(f'The training dataset is composed of {tokenized_dataset_dict["train"].num_rows} elements, the test dataset is composed of {tokenized_dataset_dict["test"].num_rows} elements.')
-    tokenized_dataset_dict.push_to_hub(hf_repo)
+    tokenized_dataset_dict.push_to_hub("iloraishaque/tokenized-bronte-full")
     LOGGER.info(f'Preparing dataset finished.')
 
 
