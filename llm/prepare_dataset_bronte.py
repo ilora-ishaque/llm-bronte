@@ -58,7 +58,7 @@ def preprocess_data(dataset_path: Path, min_length: int, tokenizer: PreTrainedTo
             if len(text) > min_length:
                 grouped_text += text
         # End of paragraphs defined by ".\n is transformed into EOS token"
-        grouped_text = grouped_text.replace(".\n", "." + tokenizer.eos_token)
+        grouped_text = grouped_text.replace(".\r\n", "." + tokenizer.eos_token)
         return preprocess_text(grouped_text)
 
 
