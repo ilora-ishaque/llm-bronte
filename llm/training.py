@@ -17,7 +17,7 @@ LOGGER = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
 
-class LLMTolkien():
+class LLMBronte():
 
     def __init__(self, model_name: str) -> None:
         self.model_name = model_name
@@ -50,13 +50,13 @@ class LLMTolkien():
         trainer.train()
         model.config.use_cache = True
 ####################
-        # model.save_pretrained("llm-tolkien")
+        # model.save_pretrained("llm-bronte")
         # trainer.model.push_to_hub(repo_id=hf_repo, token=True)
         # trainer.tokenizer.push_to_hub(repo_id=hf_repo, token=True)
 #####################
 
         model.save_pretrained('./adapter', token=True)
-        model.push_to_hub('iloraishaque/llm-tolkien', token=True, safe_serialization=True)
+        model.push_to_hub('iloraishaque/llm-bronte', token=True, safe_serialization=True)
 
     def evaluate():
         pass
@@ -154,13 +154,12 @@ if __name__ == "__main__":
         # ,"max_steps":1
     }
 
-    model = LLMTolkien(args.model_name)
+    model = LLMBronte(args.model_name)
     model.train(
         hf_repo=args.hf_repo,
         bnb_config=bnb_config,
         lora_config=lora_config,
         trainer_config=trainer_config,
-        mlm=args.mlm,
-
+        mlm=args.mlm
     )
 
