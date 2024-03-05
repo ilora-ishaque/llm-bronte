@@ -10,7 +10,7 @@ from llm import config
 
 # import sys    
 
-# path_to_module = 'content/llm-tolkien/llm/config.py'
+# path_to_module = 'content/llm-bronte/llm/config.py'
 # sys.path.append(path_to_module)
 # import config
 
