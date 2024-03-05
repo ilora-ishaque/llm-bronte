@@ -8,6 +8,13 @@ from bs4 import BeautifulSoup
 
 from llm import config
 
+# import sys    
+
+# path_to_module = 'content/llm-bronte/llm/config.py'
+# sys.path.append(path_to_module)
+# import config
+
+
 # logging.basicConfig(level=logging.INFO)
 # LOGGER = logging.getLogger(__name__)
 
