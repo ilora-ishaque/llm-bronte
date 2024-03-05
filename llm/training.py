@@ -56,7 +56,7 @@ class LLMBronte():
 #####################
 
         model.save_pretrained('./adapter', token=True)
-        model.push_to_hub('iloraishaque/llm-bronte', token=True, safe_serialization=True)
+        model.push_to_hub(hf_repo, token=True, safe_serialization=True)
 
     def evaluate():
         pass
