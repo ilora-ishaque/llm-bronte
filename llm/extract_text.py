@@ -6,7 +6,7 @@ import logging
 import json
 from tqdm import tqdm
 
-import pdfplumber
+ienport pdfplumber
 from pdfplumber.page import Page
 from pdfplumber.pdf import PDF
 from memory_profiler import profile

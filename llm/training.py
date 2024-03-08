@@ -55,8 +55,9 @@ class LLMBronte():
         # trainer.tokenizer.push_to_hub(repo_id=hf_repo, token=True)
 #####################
 
-        model.save_pretrained('./adapter', token=True)
+        # model.save_pretrained('./adapter', token=True)
         model.push_to_hub('iloraishaque/llm-bronte-full', token=True, safe_serialization=True)
+        tokenizer.push_to_hub('iloraishaque/llm-bronte-full')
 
     def evaluate():
         pass
