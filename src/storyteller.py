@@ -4,7 +4,7 @@ import json
 import os
 
 
-API_TOKEN = os.getenv("HUGGINGFACE_INFERENCE_TOKEN")
+API_TOKEN = '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' #os.getenv("HUGGINGFACE_INFERENCE_TOKEN")
 API_URL = "https://io8e4x139hj5werp.eu-west-1.aws.endpoints.huggingface.cloud"
 
 
