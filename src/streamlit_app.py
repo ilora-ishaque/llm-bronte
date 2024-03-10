@@ -21,7 +21,7 @@ def load_eos_token_id(model_name: int = config.model_name_for_eos_token_id) -> i
 with st.sidebar:
     st.title("The Charlotte Bronte Storyteller")
     st.header("Write your own story!")
-    st.write("This app enables you to complete a 'Carlotte Bronte' style story based on your inital text.")
+    st.write("This app enables you to complete a 'Charlotte Bronte' style story based on your inital text.")
 
     st.header("Generation parameters")
     st.slider("Temperature", min_value=0.0, max_value=1.0, value=config.temperature, step=0.1, key="temperature")
