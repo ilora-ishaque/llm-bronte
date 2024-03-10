@@ -5,7 +5,7 @@ import os
 
 
 API_TOKEN = os.getenv("HUGGINGFACE_INFERENCE_TOKEN")
-API_URL = "https://lbkepqwvqtxvvdfp.eu-west-1.aws.endpoints.huggingface.cloud"
+API_URL = "https://io8e4x139hj5werp.eu-west-1.aws.endpoints.huggingface.cloud"
 
 
 class StoryTeller():
