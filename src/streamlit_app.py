@@ -44,7 +44,7 @@ def write(text: str) -> str:
     LOGGER.info(f"Parameters: {parameters}")
     output = storyteller({"inputs": text, "parameters": parameters})
     LOGGER.info(f"Writing finished. The result is: {output}")
-    return output#["generated_text"]
+    return output["generated_text"]
 
 
 st.text_input("Start your story here", key="text_input")
